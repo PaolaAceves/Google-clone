@@ -1,0 +1,310 @@
+body{
+    /* Margen predeterminado de las paginas web */
+    margin: 0;
+    /* Margenes hacia adentro */
+    padding: 0;
+    /* El tamaño de la fuente */
+    font-size: 12px;
+    /* Tipografia, fuente que se va a usa*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ************************************************************************* */
+/* *********************** Estilos del header NAV************************** */
+header{
+    /* width: anchura // height: altura */
+    margin-top: 2px;
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    display: flex;
+    /* Mover mi nav hacia la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* Eliminar vinetas */
+    list-style:none;
+    width: 250px;
+    /* Hacemos el elemento flexible */
+    display: flex;
+    /* Centramos */
+    justify-content: space-between;
+    /* Centrado vertical */
+    align-items: center;
+    height: auto;
+    margin: 10px 1px 0px 20px;
+}
+
+nav .nav-right-section a {
+    /* Quitar delineado // linea */
+    text-decoration: none;
+    /* color de texto */
+    color: rgba(0, 0, 0, .87);
+    font-size: 13px;
+    /* margin: 0px 0px 0px 0px; */
+    /* margin-right: 1px; */
+    padding-left: 30px;
+    margin-right: 0px;
+    margin-left: -22px;
+}
+
+nav .nav-right-section a:hover{
+    text-decoration: underline;
+}
+
+/* imagen de puntitos */
+nav .nav-right-section .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 22px;
+    height: 22px;
+    /* Tamano de imagen de fondo -- contenida */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    margin-right: -10px;
+}
+
+nav .nav-right-section .menu:hover{
+    background-color: rgb(214, 215, 215);
+    border-radius: 50%;
+
+}
+
+nav .nav-right-section img {
+    /* Margin - right // margen derecho y hacer espacio a la foto */
+    margin-right: 18px;
+    border-radius: 100%;
+    margin-top: 2px;
+}
+
+
+/* ************************************************************************* */
+/* *************** Estilos del contenido principal Main ******************* */
+
+main {
+    /* margin superior */
+    margin-top: 20px;
+    /* Centrar elementos */
+    text-align: center;
+}
+
+main .main-logo {
+    /* background-color: aqua; */
+    width: 900px;
+    /* margenes vertical horizontal */
+    margin: 0 auto;
+    /* margen después de el doodle */
+    margin-bottom: 50px;
+}
+
+/* esto edita la imagen o doodle de google*/
+main .main-logo img {
+    height: 125px;
+    /* width: 100%; */
+}
+
+/* seccion que contiene la caja del input y los logos */
+main .main-input {
+    /* background-color: aqua; */
+    /* Ancho */
+    width: 590px;
+    /* Margen 0 de forma vertical y auto horizontal */
+    margin: 0 auto;
+}
+
+/* Esta es la cajita del input redondeada */
+main .main-input-container{
+    width: 585px;
+    /* BORDE DE COLOR: ANCHURA DE LÍNEA, ESTILO, COLOR  */
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+}
+
+/* Este es el elemento que permite escribir en el buscador */
+main .main-input input {
+    height: 45px;
+    border: none;
+    outline: none;
+    width: 455px;
+}
+
+/* La Lupa */
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    /* Margen hacia adentro */
+    padding-left: 49px;
+    /* Que no se repita la imagen */
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+}
+/* El Microfono */
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;   
+    padding-left: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;   
+    padding-left: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+main .main-input-container:hover{
+    box-shadow: 0 0 10px 3px #42434447;
+    /*  sombra hacia la derecha, sombra hacia abajo, efecto difuminado, grosor de la sombra*/   
+    border-color: #dfe1e500;
+}
+
+main .main-buttons{
+    /* background-color: aqua; */
+    /* background-color: aqua; */
+    /* anchura */
+    width: 550px;
+    /* margen de forma vertical horizontal */
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* background-color: antiquewhite; */
+    /* para que esten en la misma linea */
+    display: inline;
+}
+
+main .main-buttons button{
+    /* separacion entre el input y los botones */
+    margin-top: 27px;
+    
+    /* para quitar el border con none o 0 px */
+    border: none;
+    width: 150px;
+    height: 35px;
+    background-color: #f8f9fa;
+    /* color del texto */
+    color: #3c4043;
+    border-radius: 5px;
+    /* padding: 1px 13px; */
+
+    font-size: 14px;
+    margin-right: -2px;
+    margin: 28px 5px 0px 0px;
+    padding-left: 11px;
+    padding-top: 4px;
+    padding-right: -10px;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+}
+
+/* ************************************************************************* */
+/* *********************** Estilos del footer ***************************** */
+
+footer {
+    background-color: #f2f2f2df;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 46px; */
+    height: 15%;
+    display: inline;
+}
+
+footer .footer-listas{
+    /* background-color: #3c4043; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    height: 49%;  
+    border-top: 1px solid #a3a4a46a;
+}
+
+footer .footer-listas .footer-left{
+    /* background-color: aqua; */
+    list-style: none;
+    /* width: 600px; */
+    width: 60%;
+    /* height: 46px; */
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding-left: 5px;
+    margin-top: 13px;
+}
+
+footer .footer-listas .footer-left a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+    font-size: 13.5px;
+    margin: 0px 0px 1px 30px;
+    font-size: 14px;
+
+}
+
+footer .footer-listas .footer-left a:hover{
+    text-decoration: underline;
+}
+footer .footer-listas .footer-right{
+    /* background-color: rgb(189, 176, 57); */
+    list-style: none;
+    /* width: 500px; */
+    width: 40%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    margin-right: 35px;
+    margin-top: 13px;
+}
+
+footer .footer-listas .footer-right a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+    font-size: 14px;
+    margin: 0px 0px 1px 30px;
+}
+
+footer .footer-listas .footer-right a:hover{
+    text-decoration: underline;
+}
+
+footer .footer-div{
+    /* background-color: aqua; */
+    height: 49%;
+    
+    border-top: 1px solid #a3a4a46a;
+    /* border: #3c4043; */
+}
+footer .footer-div .footer-pais{
+    margin-left: 30px;
+    padding-top: 16px;
+    font-size: 15px;
+    /* border-top: 1px solid #a3a4a46a; */
+}
+
+/* .footer-div, .footer-listas {
+    border-top: 1px solid #a3a4a46a;
+} */
+
